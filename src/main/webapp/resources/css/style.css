@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+
+
+
+
+html, body {
+    height: 100% !important; 
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important; 
+    background: #f7fafc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.page-container {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100% !important; 
+}
+
+.content-wrapper {
+    flex-grow: 1 0 auto; 
+}
+
+
+.banner{
+	background: #1A202C;
+}
+
+.header{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+
+
+
+
+.menu{
+	margin: 0 20px;
+}
+
+.ui-menubar {
+    display: flex;
+    justify-content: center; 
+    background: #4A5568 !important;
+    border: none !important;
+}
+
+.ui-menubar .ui-menuitem-link {
+    background: #2D3748  !important; 
+    color: #cbf7ed !important;
+}
+
+.ui-menubar .ui-menuitem-link .ui-menuitem-text {
+    color: #f7fafc !important; 
+}
+
+.ui-menubar .ui-menuitem-link:hover .ui-menuitem-text {
+    color: #f7fafc !important; 
+}
+
+.ui-menubar .ui-menubar-root-list {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.ui-menubar .ui-menuitem {
+    float: none !important;
+    margin: 0 3px !important;
+}
+
+.ui-menubar .ui-menuitem-link:hover {
+    background: #1A202C !important; 
+    color: #ffffff !important;
+}
+
+.ui-menu-child{
+	background: #cbf7ed !important;
+}
+
+
+.panel-container{
+	max-width: 800px;
+	margin: 50px auto;
+	width: 90%;
+}
+
+.panel{
+	margin-bottom:50px;
+	width: 100%;
+}
+
+
+.footer-principal {
+    background-color: #1A202C;
+    padding: 20px 0;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer-title {
+    color: #f7fafc;              
+    font-size: 1.2em;             
+    font-weight: 700;             
+    margin-bottom: 25px;          
+    letter-spacing: 0.5px;        
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.footer-button-logo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #2D3748; 
+    border-radius: 6px;
+    padding: 10px; 
+    
+    width: 180px; 
+    height: 70px;
+    
+    transition: all 0.2s ease-in-out; 
+}
+
+
+.footer-button-logo img {
+    max-width: 95%;  
+    max-height: 95%;
+    height: auto;
+    transition: transform 0.2s ease-in-out; 
+}
+
+
+.footer-button-logo:hover {
+    background-color: #4A5568; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.footer-button-logo:hover img {
+    transform: scale(1.05); 
+}

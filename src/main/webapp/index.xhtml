@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    
+	<ui:composition template="templatePrincipal.xhtml">
+	
+	    <ui:define name="content">
+	        
+	        <div class="content-wrapper">
+	        	<div class="panel-container">
+	        		<div class="panel">
+			            <p:panel header="Quem somos?" style="text-align: center">
+		                <p>Somos a BePoP! Uma empresa de consultorias especializada e pensada para auxiliar vendedores de papel de todo o mundo!</p>
+		            	</p:panel>
+		            </div>	
+	
+					<div class="panel">
+			            <p:panel header="Serviços" style="text-align: center">
+			                <p:outputPanel>
+			                    <h:outputText value="Agende sua consultoria conosco e impulsione seu negócio!" />
+			                    <br/>
+			                    <br/>
+			                    <h:outputText value="* Consultorias marcadas apenas com 38 horas de antecedência, de 8h às 18h." />
+			                    
+			                </p:outputPanel>
+			            </p:panel>
+					</div>
+		        </div>     
+	        </div>
+	
+	    </ui:define>
+	
+	</ui:composition>
+</html>

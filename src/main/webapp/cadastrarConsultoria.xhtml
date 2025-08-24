@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    
+	<ui:composition template="templatePrincipal.xhtml">
+	
+	    <ui:define name="content">
+		        <h:form>
+			        <p:growl id="messages" showDetail="true" autoUpdate="true"/>
+			        <p:panel header="Marcar Consultoria">
+			            
+			            <h:panelGrid id ="campos" columns="2" cellpadding="7">
+			                <p:outputLabel for="cnpj" value="CNPJ da Empresa:"/>
+			                <p:inputMask id="cnpj" value="#{cadastrarConsultoriaBean.consultoria.cnpj}" mask="99.999.999/9999-99" required="true"/>
+			
+			                <p:outputLabel for="cliente" value="Nome da Empresa:"/>
+			                <p:inputText id="cliente" value="#{cadastrarConsultoriaBean.consultoria.nomeEmpresa}" required="true"/>
+			
+			                <p:outputLabel for="descricao" value="Descrição:"/>
+			                <p:inputTextarea id="descricao" value="#{cadastrarConsultoriaBean.consultoria.descricao}"/>
+			
+			                <p:outputLabel for="data" value="Data e Hora:"/>
+			                <p:calendar id="data" value="#{cadastrarConsultoriaBean.consultoria.data}" pattern="dd/MM/yyyy HH:mm" showOn="button"
+			                 			timeZone="America/Sao_Paulo" required="true" mindate="#{cadastrarConsultoriaBean.dataMinima}"
+			                 			minHour="8" maxHour="17" mask="true"/>
+			            </h:panelGrid>
+			            
+			            <p:commandButton value="Agendar" action="#{cadastrarConsultoriaBean.salvar}" update="campos messages"/>
+			        </p:panel>
+	    		</h:form>
+
+	    </ui:define>
+	
+	</ui:composition>
+</html>

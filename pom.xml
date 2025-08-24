@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<dependencies>
+	<dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>5.6.15.Final</version>
+    </dependency>
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.33</version>
+	</dependency>
+	
+	
+		<!-- https://mvnrepository.com/artifact/com.sun.faces/jsf-api -->
+	<dependency>
+	    <groupId>com.sun.faces</groupId>
+	    <artifactId>jsf-api</artifactId>
+	    <version>2.2.15</version>
+	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat -->
+	<dependency>
+	    <groupId>org.apache.tomcat</groupId>
+	    <artifactId>tomcat</artifactId>
+	    <version>8.5.0</version>
+	    <type>pom</type>
+	    <scope>provided</scope>
+	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
+	<dependency>
+	    <groupId>org.primefaces</groupId>
+	    <artifactId>primefaces</artifactId>
+	    <version>13.0.9</version>
+	</dependency>
+	
+</dependencies>
+
+
+  <groupId>BePoP</groupId>
+  <artifactId>BePoP</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

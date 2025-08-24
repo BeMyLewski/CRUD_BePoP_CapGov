@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<title>BePoP</title>
+		<h:outputStylesheet library="css" name="style.css" />
+	</h:head>
+	<h:body>
+		<div class="page-container">
+			<div class="banner">
+				<div class="header">
+					<h1 style="color: #f7fafc; margin: 20px 0;">BePoP</h1>
+				</div>
+		
+				
+				<div class="menu">
+					<p:menubar>
+						<p:menuitem value="Home" url="index.xhtml"></p:menuitem>
+						<p:menuitem value="Marcar Consultoria" url="cadastrarConsultoria.xhtml"></p:menuitem>
+						<p:menuitem value="Verificar Consultoria" url="consultaReserva.xhtml"></p:menuitem>
+					</p:menubar>
+					<div>
+						<br></br>
+					</div>
+				</div>
+		
+			</div>
+			
+			<div class="content=wrapper">
+				<ui:insert name="content"></ui:insert>
+			</div>
+			
+			
+			<footer class="footer-principal" >
+			
+				<h2 class="footer-title">Conheça nossos parceiros:</h2>
+			
+			    <div class="footer-content">
+			        <h:outputLink value="https://en.wikipedia.org/wiki/Dunder_Mifflin" 
+			                      target="_blank" 
+			                      styleClass="footer-button-logo">
+			            <h:graphicImage library="images" name="Dunder_Mifflin,_Inc.svg" alt="Logo Dunder Mifflin"/>
+			        </h:outputLink>
+			
+			        <h:outputLink value="https://en.wikipedia.org/wiki/The_Office_(British_TV_series)" 
+			                      target="_blank" 
+			                      styleClass="footer-button-logo">
+			            <h:graphicImage library="images" name="Wernham_Hogg_Company.jpg" alt="Logo Wernham Hogg"/>
+			        </h:outputLink>
+			    </div>
+			</footer>
+			</div>
+	</h:body>
+	
+	
+</html>
